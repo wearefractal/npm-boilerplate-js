@@ -1,10 +1,10 @@
 {
    "name":"APPNAME",
    "description":"DESCRIPTIONHERE",
-   "version":"0.0.1",
-   "homepage":"http://github.com/wearefractal/APPNAME",
-   "repository":"git://github.com/wearefractal/APPNAME.git",
-   "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+   "version":"0.1.0",
+   "homepage":"http://github.com/GITUSERNAME/APPNAME",
+   "repository":"git://github.com/GITUSERNAME/APPNAME.git",
+   "author":"Steve Lacy me@slacy.me (http://slacy.me/)",
    "main":"./index.js",
    
    "dependencies":{
@@ -18,12 +18,12 @@
       "test":"mocha"
    },
    "engines":{
-      "node":">= 0.4.0"
+      "node":">= 0.8.0"
    },
    "licenses":[
       {
          "type":"MIT",
-         "url":"http://github.com/wearefractal/APPNAME/raw/master/LICENSE"
+         "url":"http://github.com/GITUSERNAME/APPNAME/raw/master/LICENSE"
       }
    ]
 }

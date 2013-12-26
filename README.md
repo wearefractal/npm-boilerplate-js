@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/wearefractal/APPNAME.png?branch=master)](https://travis-ci.org/wearefractal/APPNAME)
+[![Build Status](https://travis-ci.org/GITUSERNAME/APPNAME.png?branch=master)](https://travis-ci.org/GITUSERNAME/APPNAME)
 
 [![NPM version](https://badge.fury.io/js/APPNAME.png)](http://badge.fury.io/js/APPNAME)
 
-## Information
+#APPNAME
 
 <table>
 <tr> 
@@ -26,13 +26,13 @@ EXAMPLEHERE
 
 ## Examples
 
-You can view more examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+You can view more examples in the [example folder.](https://github.com/GITUSERNAME/APPNAME/tree/master/examples)
 
 ## LICENSE
 
 (MIT License)
 
-Copyright (c) 2013 Fractal <contact@wearefractal.com>
+Copyright (c) 2013 Steve Lacy - Fractal <contact@GITUSERNAME.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
