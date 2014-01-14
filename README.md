@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/wearefractal/APPNAME.png?branch=master)](https://travis-ci.org/wearefractal/APPNAME)
+# APPNAME [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url]
 
-[![NPM version](https://badge.fury.io/js/APPNAME.png)](http://badge.fury.io/js/APPNAME)
 
 ## Information
 
@@ -24,31 +23,17 @@
 EXAMPLEHERE
 ```
 
-## Examples
+[npm-url]: https://npmjs.org/package/APPNAME
+[npm-image]: https://badge.fury.io/js/APPNAME.png
 
-You can view more examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+[travis-url]: https://travis-ci.org/wearefractal/APPNAME
+[travis-image]: https://travis-ci.org/wearefractal/APPNAME.png?branch=master
 
-## LICENSE
+[coveralls-url]: https://coveralls.io/r/wearefractal/APPNAME
+[coveralls-image]: https://coveralls.io/repos/wearefractal/APPNAME/badge.png
 
-(MIT License)
+[depstat-url]: https://david-dm.org/wearefractal/APPNAME
+[depstat-image]: https://david-dm.org/wearefractal/APPNAME.png
 
-Copyright (c) 2014 Fractal <contact@wearefractal.com>
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[david-url]: https://david-dm.org/wearefractal/APPNAME
+[david-image]: https://david-dm.org/wearefractal/APPNAME.png?theme=shields.io
