@@ -5,8 +5,9 @@
 #APPNAME
 
 <table>
-<tr> 
-<td>Package</td><td>APPNAME</td>
+<tr>
+<td>Package</td>
+<td>APPNAME</td>
 </tr>
 <tr>
 <td>Description</td>
@@ -18,13 +19,46 @@
 </tr>
 </table>
 
-## Usage
+# Usage
 
-```javascript
+## Install
+
+```
+npm install APPNAME --save
+
+```
+## Example
+
+```js
+
 EXAMPLEHERE
+
 ```
 
-## Examples
+-----------
+---
+### REMOVE THIS:
+###Directions for boiler use:
+####Replace All occurrences in All files with your name or information:
+
+- APPNAME: Your app name
+- GITUSERNAME: Your Git Username
+- DESCRIPTIONHERE: The description of your app
+- EXAMPLEHERE: The README example for your app
+- YOURNAME: Your human name, or display name
+- YOURDOMAIN: Your FULL website domain, or just github.com (including the http/https)
+- YOUREMAIL: Your email address
+- SOURCE: Alter the line as needed on the README.md
+
+#### DELETE the .git folder!
+Run `git init` and configure your git repo.
+
+An example of this boiler used is: [msi-keyboard](https://github.com/wearefractal/msi-keyboard)
+
+-----------
+---
+
+
 
 You can view more examples in the [example folder.](https://github.com/GITUSERNAME/APPNAME/tree/master/examples)
 
@@ -32,7 +66,7 @@ You can view more examples in the [example folder.](https://github.com/GITUSERNA
 
 (MIT License)
 
-Copyright (c) 2013 Steve Lacy - Fractal <contact@GITUSERNAME.com>
+Copyright (c) 2014 YOURNAME <YOUREMAIL>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
