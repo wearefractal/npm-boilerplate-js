@@ -46,9 +46,8 @@ EXAMPLEHERE
 - DESCRIPTIONHERE: The description of your app
 - EXAMPLEHERE: The README example for your app
 - YOURNAME: Your human name, or display name
-- YOURDOMAIN: Your FULL website domain, or just github.com (including the http/https)
+- YOURDOMAIN: Your FULL website domain or empty (including the http/https)
 - YOUREMAIL: Your email address
-- SOURCE: Alter the line as needed on the README.md
 
 #### DELETE the .git folder!
 Run `git init` and configure your git repo.
