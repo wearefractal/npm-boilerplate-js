@@ -1,10 +1,10 @@
 {
    "name":"APPNAME",
    "description":"DESCRIPTIONHERE",
-   "version":"0.1.0",
+   "version":"0.0.1",
    "homepage":"http://github.com/GITUSERNAME/APPNAME",
    "repository":"git://github.com/GITUSERNAME/APPNAME.git",
-   "author":"Steve Lacy me@slacy.me (http://slacy.me/)",
+   "author":"YOURNAME YOUREMAIL (YOURDOMAIN)",
    "main":"./index.js",
    
    "dependencies":{
@@ -15,7 +15,7 @@
       "should":"*"
    },
    "scripts":{
-      "test":"mocha"
+      "test":"mocha --reporter spec"
    },
    "engines":{
       "node":">= 0.8.0"
