@@ -2,9 +2,9 @@
   "name":"APPNAME",
   "description":"DESCRIPTIONHERE",
   "version":"0.0.1",
-  "homepage":"http://github.com/wearefractal/APPNAME",
-  "repository":"git://github.com/wearefractal/APPNAME.git",
-  "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "homepage":"http://github.com/GITUSERNAME/APPNAME",
+  "repository":"git://github.com/GITUSERNAME/APPNAME.git",
+  "author":"YOURNAME YOUREMAIL (YOURDOMAIN)",
   "main":"./index.js",
   
   "dependencies":{
