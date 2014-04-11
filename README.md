@@ -1,4 +1,4 @@
-# APPNAME [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url]
+# APPNAME [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Support us][gittip-image]][gittip-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
 
 ## Information
@@ -23,17 +23,17 @@
 EXAMPLEHERE
 ```
 
+## Like what we do?
+
+[gittip-url]: https://www.gittip.com/WeAreFractal/
+[gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg
+
+[downloads-image]: http://img.shields.io/npm/dm/APPNAME.svg
 [npm-url]: https://npmjs.org/package/APPNAME
-[npm-image]: https://badge.fury.io/js/APPNAME.png
+[npm-image]: http://img.shields.io/npm/v/APPNAME.svg
 
 [travis-url]: https://travis-ci.org/wearefractal/APPNAME
-[travis-image]: https://travis-ci.org/wearefractal/APPNAME.png?branch=master
+[travis-image]: http://img.shields.io/travis/wearefractal/APPNAME.svg
 
 [coveralls-url]: https://coveralls.io/r/wearefractal/APPNAME
-[coveralls-image]: https://coveralls.io/repos/wearefractal/APPNAME/badge.png
-
-[depstat-url]: https://david-dm.org/wearefractal/APPNAME
-[depstat-image]: https://david-dm.org/wearefractal/APPNAME.png
-
-[david-url]: https://david-dm.org/wearefractal/APPNAME
-[david-image]: https://david-dm.org/wearefractal/APPNAME.png?theme=shields.io
+[coveralls-image]: http://img.shields.io/coveralls/wearefractal/APPNAME/master.svg
