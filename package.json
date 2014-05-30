@@ -9,9 +9,9 @@
   },
   "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
   "main":"./index.js",
-  
+
   "dependencies":{
-    
+
   },
   "devDependencies": {
     "mocha": "^1.17.0",
