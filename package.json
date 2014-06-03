@@ -1,38 +1,36 @@
 {
-  "name":"APPNAME",
-  "description":"DESCRIPTIONHERE",
-  "version":"0.0.1",
-  "homepage":"http://github.com/wearefractal/APPNAME",
+  "name": "APPNAME",
+  "description": "DESCRIPTIONHERE",
+  "version": "0.0.1",
+  "homepage": "http://github.com/wearefractal/APPNAME",
   "repository": {
     "type": "git",
     "url": "git://github.com/wearefractal/APPNAME.git"
   },
-  "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
-  "main":"./index.js",
-
-  "dependencies":{
-
-  },
+  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "main": "./index.js",
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "^1.17.0",
-    "should": "^3.1.0",
-    "mocha-lcov-reporter": "^0.0.1",
     "coveralls": "^2.6.1",
     "istanbul": "^0.2.3",
+    "jshint": "^2.4.1",
+    "jshint-stylish": "^0.2.0",
+    "mocha": "^1.17.0",
+    "mocha-lcov-reporter": "^0.0.1",
     "rimraf": "^2.2.5",
-    "jshint": "^2.4.1"
+    "should": "^4.0.0"
   },
   "scripts": {
-    "test": "mocha --reporter spec && jshint",
+    "test": "npm run-script lint && mocha --recursive --reporter spec",
     "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "engines": {
     "node": ">= 0.9"
   },
-  "licenses":[
+  "licenses": [
     {
-      "type":"MIT",
-      "url":"http://github.com/wearefractal/APPNAME/raw/master/LICENSE"
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/APPNAME/raw/master/LICENSE"
     }
   ]
 }

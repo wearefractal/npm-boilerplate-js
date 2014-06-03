@@ -4,7 +4,7 @@
 ## Information
 
 <table>
-<tr> 
+<tr>
 <td>Package</td><td>APPNAME</td>
 </tr>
 <tr>
