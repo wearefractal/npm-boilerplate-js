@@ -1,3 +1,5 @@
+'use strict';
+
 var APPNAME = require('../');
 var should = require('should');
 require('mocha');

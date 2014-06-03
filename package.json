@@ -21,11 +21,12 @@
     "should": "^4.0.0"
   },
   "scripts": {
-    "test": "npm run-script lint && mocha --recursive --reporter spec",
+    "lint": "jshint . --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
+    "test": "npm run-script lint && mocha --reporter spec",
     "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "engines": {
-    "node": ">= 0.9"
+    "node": ">= 0.10"
   },
   "licenses": [
     {
