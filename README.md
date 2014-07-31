@@ -1,4 +1,4 @@
-# APPNAME [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url]
+# APPNAME [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Support us][gittip-image]][gittip-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
 
 ## Information
@@ -14,7 +14,7 @@
 </tr>
 <tr>
 <td>Node Version</td>
-<td>>= 0.9</td>
+<td>>= 0.10</td>
 </tr>
 </table>
 
@@ -33,7 +33,6 @@ npm install APPNAME --save
 EXAMPLEHERE
 
 ```
-
 
 -----------
 ---
@@ -94,8 +93,14 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
+## Like what we do?
+
+[gittip-url]: https://www.gittip.com/WeAreFractal/
+[gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg
+
+[downloads-image]: http://img.shields.io/npm/dm/APPNAME.svg
 [npm-url]: https://npmjs.org/package/APPNAME
-[npm-image]: https://badge.fury.io/js/APPNAME.png
+[npm-image]: http://img.shields.io/npm/v/APPNAME.svg
 
 [travis-url]: https://travis-ci.org/GITUSERNAME/APPNAME
 [travis-image]: https://travis-ci.org/GITUSERNAME/APPNAME.png?branch=master
