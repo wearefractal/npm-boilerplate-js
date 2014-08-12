@@ -5,12 +5,6 @@
   "homepage":"http://github.com/GITUSERNAME/APPNAME",
   "repository":"git://github.com/GITUSERNAME/APPNAME.git",
   "author":"YOURNAME YOUREMAIL (YOURDOMAIN)",
-  "main":"./index.js",
-
-  "dependencies":{
-  },
-  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
-  "main": "./index.js",
   "dependencies": {},
   "devDependencies": {
     "coveralls": "^2.6.1",
