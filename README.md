@@ -51,7 +51,6 @@ EXAMPLEHERE
 #### DELETE the .git folder!
 Run `git init` and configure your git repo.
 
-An example of this boiler used is: [msi-keyboard](https://github.com/wearefractal/msi-keyboard)
 
 -----------
 ---
@@ -94,6 +93,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ## Like what we do?
+[![Support us][gittip-image]][gittip-url]
 
 [gittip-url]: https://www.gittip.com/WeAreFractal/
 [gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg
