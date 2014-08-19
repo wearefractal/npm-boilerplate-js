@@ -87,14 +87,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-
-
-
-
-
-## Like what we do?
-[![Support us][gittip-image]][gittip-url]
-
 [gittip-url]: https://www.gittip.com/WeAreFractal/
 [gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg
 
