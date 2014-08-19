@@ -1,13 +1,14 @@
 'use strict';
 
-var APPNAME = require('../');
 var should = require('should');
+var APPNAME = require('../');
+
 require('mocha');
 
 describe('APPNAME', function() {
   describe('FUNCTIONNAME()', function() {
     it('should TASKNAME', function(done) {
-      should.exist(true);
+      should.exist(APPNAME);
       done();
     });
   });
