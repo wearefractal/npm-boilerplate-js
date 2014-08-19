@@ -20,7 +20,7 @@
 
 ## Usage
 
-## install
+## Install
 
 ```
 npm install APPNAME --save
