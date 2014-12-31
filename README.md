@@ -63,7 +63,7 @@ You can view more examples in the [example folder.](https://github.com/GITUSERNA
 
 (MIT License)
 
-Copyright (c) 2014 YOURNAME <YOUREMAIL>
+Copyright (c) 2015 YOURNAME <YOUREMAIL>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
