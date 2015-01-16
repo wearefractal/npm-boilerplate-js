@@ -12,9 +12,7 @@ var defaults = {
   yourEmail: 'contact@wearefractal.com',
   yourDomain: 'http://wearefractal.com',
   gitUserName: 'wearefractal',
-  main: './index.js',
-  test: 'npm run-script lint && mocha --reporter spec',
-  lint: 'jshint . --exclude node_modules --config .jshintrc'
+  main: './index.js'
 };
 
 
@@ -47,12 +45,6 @@ var questions = {
     },
     main: {
       default: defaults.main
-    },
-    test: {
-      default: defaults.test
-    },
-    lint: {
-      default: defaults.lint
     }
   }
 };
@@ -62,7 +54,7 @@ prompt.start();
 if (argv[2] == '--use-defaults') {
   console.log('Using defaults \n');
 
-  defaultQuestions = {
+  var defaultQuestions = {
     properties: {
       projectName: {
         pattern: /^[a-zA-Z\-]+$/,

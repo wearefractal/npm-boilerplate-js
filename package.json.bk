@@ -18,8 +18,8 @@
   },
   "main": "./index.js",
   "scripts": {
-    "lint": "<%=lint%>",
-    "test": "<%=test%>",
+    "lint": "jshint . --exclude node_modules --config .jshintrc",
+    "test": "npm run-script lint && mocha --reporter spec",
     "coveralls": "istanbul cover _mocha && istanbul-coveralls"
   },
   "engines": {
