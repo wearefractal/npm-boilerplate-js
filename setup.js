@@ -3,6 +3,7 @@ var prompt = require('prompt');
 var template = require('lodash.template');
 var merge = require('lodash.merge');
 var rmraf = require('rimraf');
+var exec = require('child_process').exec;
 
 var argv = process.argv;
 
@@ -41,7 +42,8 @@ var questions = {
     gitUserName: {
       required: true,
       default: defaults.gitUserName
-    }
+    },
+    gitUrl: {}
   }
 };
 
@@ -62,12 +64,14 @@ if (argv[2] == '--use-defaults') {
   };
 
   return prompt.get(defaultQuestions, function(err, data) {
+    data.gitUrl = getGitUrl(data);
     data = merge(data, defaults);
     save(data);
   });
 }
 
 prompt.get(questions, function(err, data) {
+  data.gitUrl = getGitUrl(data);
   save(data);
 });
 
@@ -80,44 +84,58 @@ function save(data) {
   var files = [
     './package.json.bk',
     './README.md.bk',
-    './LICENSE',
-    './test/index.js'
+    './LICENSE.bk',
+    './test/index.js.bk'
   ];
 
   files.forEach(function(v, k, a) {
 
-    if (v.indexOf('.bk') > -1) {
-      var newName = v.replace('.bk', '');
-      return fs.rename(v, newName, function(err) {
-        if (err) return console.log(err);
-        templateFile(newName, data);
-      });
-    }
-
-    templateFile(v, data);
-
-    if (k === a.length -1) {
-      cleanSetup();
-    }
+    var newName = v.replace('.bk', '');
+    fs.renameSync(v, newName);
+    templateFile(newName, data);
 
   });
+
+  cleanSetup(function(err) {
+    if (err) return console.log(err);
+    gitInit(data);
+  });
+
+
 }
 
+function getGitUrl(data) {
+  var gitUrl = 'https://github.com/' + data.gitUserName + '/' + data.projectName;
+  return gitUrl;
+}
 
 function templateFile(file, data) {
   fs.writeFileSync(file, template(fs.readFileSync(file), data));
 }
 
-function cleanSetup() {
+function cleanSetup(cb) {
   rmraf('node_modules', function (err) {
-    if (err) return console.log(err);
+    if (err) return cb(err);
 
     rmraf('.git', function(err) {
-      if (err) return console.log(err);
+      if (err) return cb(err);
       fs.unlink('./setup.js', function(err) {
-        if (err) return console.log(err);
-        console.log('Completed successfully\n');
+        if (err) return cb(err);
+        cb(null);
       });
     });
+  });
+}
+
+function gitInit(data) {
+  cmd = 'git init && git remote add origin ' + data.gitUrl;
+  cmd2 = 'git branch --set-upstream-to=origin/master master';
+  exec(cmd, function(err) {
+    if (err) console.log(err);
+    exec(cmd2, function(err) {
+      if (err) console.log(err);
+      console.log('\n Completed successfully');
+    });
+
   });
 }
