@@ -24,21 +24,17 @@
 
 ```
 npm install APPNAME --save
-
 ```
 ## Example
 
 ```js
-
 EXAMPLEHERE
-
 ```
 
 -----------
----
-### REMOVE THIS:
-###Directions for boiler use:
-####Replace All occurrences in All files with your name or information:
+### Directions (Remove This):
+
+Replace All occurrences in All files with your name or information:
 
 - APPNAME: Your app name
 - GITUSERNAME: Your Git Username
@@ -51,13 +47,8 @@ EXAMPLEHERE
 #### DELETE the .git folder!
 Run `git init` and configure your git repo.
 
-
 -----------
----
 
-
-
-You can view more examples in the [example folder.](https://github.com/GITUSERNAME/APPNAME/tree/master/examples)
 
 ## LICENSE
 
@@ -83,9 +74,6 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
 
 [gittip-url]: https://www.gittip.com/WeAreFractal/
 [gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg
