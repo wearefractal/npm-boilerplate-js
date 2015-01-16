@@ -50,7 +50,7 @@ prompt.start();
 if (argv[2] == '--use-defaults') {
   console.log('Using defaults \n');
 
-  defaultQuestions = {
+  var defaultQuestions = {
     properties: {
       projectName: {
         pattern: /^[a-zA-Z\-]+$/,
