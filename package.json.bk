@@ -1,0 +1,34 @@
+{
+  "name": "<%=projectName%>",
+  "description": "<%=description%>",
+  "version": "0.0.1",
+  "homepage": "http://github.com/<%=gitUserName%>/<%=projectName%>",
+  "repository": "git://github.com/<%=gitUserName%>/<%=projectName%>.git",
+  "author": "<%=yourName%> <%=yourEmail%> (<%=yourDomain%>)",
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "^0.3.0",
+    "istanbul-coveralls": "^1.0.1",
+    "jshint": "^2.5.11",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "rimraf": "^2.2.8",
+    "should": "^4.4.2"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "lint": "jshint . --exclude node_modules --config .jshintrc",
+    "test": "npm run-script lint && mocha --reporter spec",
+    "coveralls": "istanbul cover _mocha && istanbul-coveralls"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/<%=gitUserName%>/<%=projectName%>/raw/master/LICENSE"
+    }
+  ]
+}

@@ -1,34 +1,12 @@
 {
-  "name": "APPNAME",
-  "description": "DESCRIPTIONHERE",
-  "version": "0.0.1",
-  "homepage": "http://github.com/GITUSERNAME/APPNAME",
-  "repository": "git://github.com/GITUSERNAME/APPNAME.git",
-  "author": "YOURNAME YOUREMAIL (YOURDOMAIN)",
-  "dependencies": {},
-  "devDependencies": {
-    "istanbul": "^0.3.0",
-    "istanbul-coveralls": "^1.0.1",
-    "jshint": "^2.5.11",
-    "jshint-stylish": "^1.0.0",
-    "mocha": "^2.1.0",
-    "mocha-lcov-reporter": "0.0.1",
-    "rimraf": "^2.2.8",
-    "should": "^4.4.2"
+  "name": "npm-boiler-prompt",
+  "dependencies": {
+    "lodash.merge": "^2.4.1",
+    "lodash.template": "^2.4.1",
+    "prompt": "^0.2.14",
+    "rimraf": "^2.2.8"
   },
-  "main": "./index.js",
   "scripts": {
-    "lint": "jshint . --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules --config .jshintrc",
-    "test": "npm run-script lint && mocha --reporter spec",
-    "coveralls": "istanbul cover _mocha && istanbul-coveralls"
-  },
-  "engines": {
-    "node": ">= 0.10"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/GITUSERNAME/APPNAME/raw/master/LICENSE"
-    }
-  ]
+    "setup": "npm i && node ./setup.js"
+  }
 }
