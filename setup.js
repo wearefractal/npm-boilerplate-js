@@ -121,14 +121,12 @@ function cleanSetup(cb) {
 }
 
 function gitInit(data) {
-  var cmd = 'git init && git remote add origin ' + data.gitUrl;
-  var cmd2 = 'git branch --set-upstream-to=origin/master master';
+  var cmd = 'git init';
+  cmd += ' && git remote add origin ' + data.gitUrl;
+  cmd += ' && git checkout master';
+  cmd += ' && git branch --set-upstream-to=origin/master master';
   exec(cmd, function(err) {
     if (err) console.log(err);
-    exec(cmd2, function(err) {
-      if (err) console.log(err);
-      console.log('\n Completed successfully');
-    });
-
+    console.log('\n Completed successfully');
   });
 }
