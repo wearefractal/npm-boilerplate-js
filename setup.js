@@ -114,7 +114,7 @@ function cleanSetup(cb) {
       if (err) return cb(err);
       fs.unlink('./setup.js', function(err) {
         if (err) return cb(err);
-        cb(null);
+        cb();
       });
     });
   });
@@ -123,10 +123,9 @@ function cleanSetup(cb) {
 function gitInit(data) {
   var cmd = 'git init';
   cmd += ' && git remote add origin ' + data.gitUrl;
-  cmd += ' && git checkout master';
   cmd += ' && git branch --set-upstream-to=origin/master master';
   exec(cmd, function(err) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
     console.log('\n Completed successfully');
   });
 }
