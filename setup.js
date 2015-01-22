@@ -41,8 +41,7 @@ var questions = {
     gitUserName: {
       required: true,
       default: defaults.gitUserName
-    },
-    gitUrl: {}
+    }
   }
 };
 
