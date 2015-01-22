@@ -9,12 +9,11 @@ var argv = process.argv;
 
 var defaults = {
   version: '0.0.1',
-  yourName: 'We Are Fractal',
+  yourName: 'Fractal',
   yourEmail: 'contact@wearefractal.com',
   yourDomain: 'http://wearefractal.com',
   gitUserName: 'wearefractal'
 };
-
 
 var questions = {
   properties: {
@@ -89,28 +88,23 @@ function save(data) {
   ];
 
   files.forEach(function(v, k, a) {
-
-    var newName = v.replace('.bk', '');
-    fs.renameSync(v, newName);
-    templateFile(newName, data);
-
+    templateFile(v, data);
   });
 
   cleanSetup(function(err) {
-    if (err) return console.log(err);
+    if (err) return console.error(err);
     gitInit(data);
   });
-
-
 }
 
 function getGitUrl(data) {
-  var gitUrl = 'https://github.com/' + data.gitUserName + '/' + data.projectName;
-  return gitUrl;
+  return 'https://github.com/' + data.gitUserName + '/' + data.projectName;
 }
 
-function templateFile(file, data) {
-  fs.writeFileSync(file, template(fs.readFileSync(file), data));
+function templateFile(oldName, data) {
+  var newName = oldName.replace('.bk', '');
+  fs.writeFileSync(newName, template(fs.readFileSync(oldName), data));
+  fs.unlinkSync(oldName);
 }
 
 function cleanSetup(cb) {
@@ -128,8 +122,8 @@ function cleanSetup(cb) {
 }
 
 function gitInit(data) {
-  cmd = 'git init && git remote add origin ' + data.gitUrl;
-  cmd2 = 'git branch --set-upstream-to=origin/master master';
+  var cmd = 'git init && git remote add origin ' + data.gitUrl;
+  var cmd2 = 'git branch --set-upstream-to=origin/master master';
   exec(cmd, function(err) {
     if (err) console.log(err);
     exec(cmd2, function(err) {
