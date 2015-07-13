@@ -123,8 +123,10 @@ function cleanSetup(cb) {
 function gitInit(data) {
   var cmd = 'git init';
   cmd += ' && git remote add origin ' + data.gitUrl;
-  cmd += ' && git checkout -b master';
-  cmd += ' && git config push.default current';
+  cmd += ' && git add . -A';
+  cmd += ' && git commit -m \'init\'';
+  cmd += ' && git push origin master';
+  cmd += ' && git branch --set-upstream-to=origin/master master';
   exec(cmd, function(err) {
     if (err) return console.log(err);
     console.log('\n Completed successfully');
