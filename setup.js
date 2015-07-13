@@ -124,7 +124,7 @@ function gitInit(data) {
   var cmd = 'git init';
   cmd += ' && git remote add origin ' + data.gitUrl;
   cmd += ' && git checkout -b master';
-  cmd += ' && git branch --set-upstream-to=origin/master master';
+  cmd += ' && git config push.default current';
   exec(cmd, function(err) {
     if (err) return console.log(err);
     console.log('\n Completed successfully');
