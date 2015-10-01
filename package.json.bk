@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "homepage": "http://github.com/<%=gitUserName%>/<%=projectName%>",
   "repository": "git://github.com/<%=gitUserName%>/<%=projectName%>.git",
-  "author": "<%=yourName%> <%=yourEmail%> (<%=yourDomain%>)",
+  "author": "<%=yourName%> <<%=yourEmail%>> (<%=yourDomain%>)",
   "dependencies": {},
   "devDependencies": {
     "istanbul-coveralls": "^1.0.1",
