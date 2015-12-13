@@ -7,12 +7,12 @@
   "author": "<%=yourName%> <<%=yourEmail%>> (<%=yourDomain%>)",
   "dependencies": {},
   "devDependencies": {
-    "istanbul-coveralls": "^1.0.1",
+    "istanbul-coveralls": "^1.0.3",
     "jshint": "^2.5.11",
-    "jshint-stylish": "^2.0.0",
+    "jshint-stylish": "^2.1.0",
     "mochify": "dylanfm/mochify.js",
-    "mochify-istanbul": "^2.1.1",
-    "should": "^7.0.0"
+    "mochify-istanbul": "^2.3.0",
+    "should": "^8.0.0"
   },
   "main": "./index.js",
   "scripts": {
@@ -23,10 +23,5 @@
   "engines": {
     "node": ">= 0.10"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/<%=gitUserName%>/<%=projectName%>/raw/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
