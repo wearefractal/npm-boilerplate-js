@@ -102,7 +102,7 @@ function getGitUrl(data) {
 
 function templateFile(oldName, data) {
   var newName = oldName.replace('.bk', '');
-  fs.writeFileSync(newName, template(fs.readFileSync(oldName), data)());
+  fs.writeFileSync(newName, template(fs.readFileSync(oldName))(data));
   fs.unlinkSync(oldName);
 }
 
